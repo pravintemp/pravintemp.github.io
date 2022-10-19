@@ -1,0 +1,510 @@
+<html>
+    <head>
+        <title>Happy Birthday Blessan</title>
+        <!-- Remember to include jQuery :) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <style>
+             html {
+                font-size: 18px;
+                }
+
+                body {
+                font-weight: 400;
+                font-family: "Lato", "Helvetica Neue", arial, sans-serif;
+                line-height: 1.666;
+                -webkit-font-smoothing: antialiased;
+                color: #5e6c76;
+                margin: 0;
+                padding: 10px 0 0 0;
+                }
+                .title
+                {
+                    color: #fa0065;
+                    font-weight: 700;
+                }
+                .modal
+                {
+                    max-width: 1000px !important;
+                }
+
+
+
+                html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.75rem;
+  width: 550px;
+}
+
+ul.cloud a {
+  /*   
+  Not supported by any browser at the moment :(
+  --size: attr(data-weight number); 
+  */
+  --size: 4;
+  --color: #a33;
+  color: var(--color);
+  font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  display: block;
+  padding: 0.125rem 0.25rem;
+  position: relative;
+  text-decoration: none;
+  /* 
+  For different tones of a single color
+  opacity: calc((15 - (9 - var(--size))) / 15); 
+  */
+}
+
+ul.cloud a[data-weight="1"] { --size: 1; }
+ul.cloud a[data-weight="2"] { --size: 2; }
+ul.cloud a[data-weight="3"] { --size: 3; }
+ul.cloud a[data-weight="4"] { --size: 4; }
+ul.cloud a[data-weight="5"] { --size: 6; }
+ul.cloud a[data-weight="6"] { --size: 8; }
+ul.cloud a[data-weight="7"] { --size: 10; }
+ul.cloud a[data-weight="8"] { --size: 13; }
+ul.cloud a[data-weight="9"] { --size: 16; }
+
+ul[data-show-value] a::after {
+  content: " (" attr(data-weight) ")";
+  font-size: 1rem;
+}
+
+ul.cloud li:nth-child(2n+1) a { --color: #181; }
+ul.cloud li:nth-child(3n+1) a { --color: #33a; }
+ul.cloud li:nth-child(4n+1) a { --color: #c38; }
+
+ul.cloud a:focus {
+  outline: 1px dashed;
+}
+
+ul.cloud a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: var(--color);
+  transform: translate(-50%, 0);
+  opacity: 0.15;
+  transition: width 0.25s;
+}
+
+ul.cloud a:focus::before,
+ul.cloud a:hover::before {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion) {
+  ul.cloud * {
+    transition: none !important;
+  }
+}
+        </style>
+    </head>
+    <body>
+        
+
+        <div id="Anna" class="modal">
+            <p class="title">Anna</p>
+            <p>Dear Happy Feet Blessa,
+Your first three decades was just practise for..your roaring 40s. I have never seen someone like you.. who can just have a blast tearing up the dance floor....be it on tollywood, mollywood, bollywood or hollywood music. It's fun to watch u dance.  Happy birthday.... Have a blast</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Sonia" class="modal">
+            <p class="title">Sonia</p>
+            <p>Myself and achachan share many similarities. Both of us have  birthday on the same date 13th.we shared our books during our childhood days. We even got same marks in the 10th board exam.we studied the same degree and PG courses. When you moved to Mumbai me too followed your footsteps. At last you got me married to your friend .Thank you achacha for always being with me as a wonderful elder brother. May God Almighty bless you on your big day today and all the coming days of your life. Enjoy your day!!!Have  a blast !!! Happy Birthday Achacha</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Pallo" class="modal">
+            <p class="title">Pallo</p>
+            <p>Thanks you for spoiling me :
+1. Taught me how to hold Cigarette for the first time. No doubt he is an expert in that
+2. Teasing me with saying” Aaj Friday nai hai pi sakti hai” 
+Insan acche hai, warna itna kaun kisike bare me sochta hai All jokes apart you are a great guy.
+We wish you all the happiness in life</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="ManojVarghese" class="modal">
+            <p class="title">Manoj Varghese</p>
+            <p>“Best friends are people you know you don’t need to talk every single day….”
+But when you do, it’s like you never stopped talking.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Rats" class="modal">
+            <p class="title">Rats</p>
+            <p>Achayan creates memories when you meet him! Met him once and instantly became friends with him for life.. Like true friends we don't connect often but when we do its a riot! His composure to handle somebody like me is much appreciated 🙈... Love you Achayooooo ❤️</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Mo" class="modal">
+            <p class="title">Mo</p>
+            <p>I have innumerable indelible memories with you. This totally unscripted cowboy scene from a fun-friday twinning event takes the cake. The scene starts with a very serious old western movie style face-off, killer stares, hands on the gun and ready for the kill. The works. Then suddenly the plot twists. After a few a few tense seconds of deathstaring we both realize we are lost brothers, like a 70's Bollywood movie and we run towards to each other for a hug!!😂  You are the real deal and a treasure of a human being. You are like a real brother to me! I welcome you with bro hugs to the bright side of mid-life and wish you the best future you can imagine!  Love you Blessa! You mallu stud, you!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Rosy" class="modal">
+            <p class="title">Rosy</p>
+            <p>Childhood memories with Blessan would be his pronounciation of Ka which he used to say as ta... ... We all had a good time at our maternal house with our grandparents.. our grandmoms amazing koyikatta's which we all loved so much... Happy Birthday bro... Though v don't catch up often but i always know i have a brother in mumbai who i can count on.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Krychelle" class="modal">
+            <p class="title">Krychelle</p>
+            <p>Happy birthday Blessan chetta, you are the best... Love you.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Rinki" class="modal">
+            <p class="title">Rinki</p>
+            <p>Happy 40th Birthday Blessan.. wishing you many blessings for the year ahead. 40 is a special one, probably a good time to start lying about your age now Here’s to another year of growing in strength, wisdom, success and a lot more  mallu dancing. Have an amazing one!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Snehal" class="modal">
+            <p class="title">Snehal</p>
+            <p>Blessanva, u r my Zomato guide, dance partner and a swim enthusiast (my favourite category of people). one of my favorite memory with u is our pavna lake swim. Reshmi (Olympic swimmer) and u were as crazy as i was to go for a quick dip even the day we were to check out at 10am. Due to lock down swimming anywhere was precious to us. So just before the bfast we convinced everyone we will do a quick swim both in the lake and the pool despite of cold weather.
+I also love crazy bakwas jokes marathon we have on any subject.
+Blessanva, welcome to the 40s club. Don't sweat about it coz it's just a no. U will just crazier from here on. Keep the spirits high and have rocking year ahead.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Pappu" class="modal">
+            <p class="title">Pappu</p>
+            <p>One of the most easy going n honest person, who can make you feel comfortable from the very first meeting.... Sending Blessa Happiest Birthday wishes.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Shal" class="modal">
+            <p class="title">Shal</p>
+            <p>Blessa comes with his blessing of good company, fun conversation, a great friend and an amazing dancer. He should patent his hookstep soon, before it’s used in any of the item numbers in Bollywood! He is one of the nicest human beings I have met in my life, he is kind, sensitive, loving and cares about environment deeply ( subject to being aware or in presence of someone 😂) !!! Love ya, Blessa. I will never forget my birthday in 2018, for the pleasant surprise you all managed to pull off. You made it even more special by making the delicious chicken fried rice for me, which I can’t get over it. Thank you for being part of our lives.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Antony" class="modal">
+            <p class="title">Antony</p>
+            <p>Blessa, ente priyapatte Sahodaraa, Welcome to the naughty 40s, here's wishing you the bestest days ahead.  Speaking from experience, I can tell you that the 40s are an amazing time and I'm sure you will rock it....I'm super happy that our friendship has not only survived post P3 but grown and thrived. : )
+The shy, Mallu boy I met many years ago, is now a confident Mallu man.  I'm sure your "Look East" policy has something to do with it.  : )
+My warmest wishes to you for continued happiness, joy, success, love, luck and everything that you could wish for yourself and much, much more.  A big hug to you and I look forward to catching up soon.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Sari" class="modal">
+            <p class="title">Sari</p>
+            <p>The one memory of Blessan I vividly remember is during one of our new year parties when we all were dancing and a few of us broke into Kaikuttikali. And Blessan joined us ans danced with such ease. I was amazed at his rhythm sense and grace ....it was as if he had learnt it before. Keep dancing Blessa! Wishing you a very happy 40th. Feels like main tereko bachpan se jaanti hu. BTW tera bachpan 🥰</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Bala" class="modal">
+            <p class="title">Bala</p>
+            <p>Whenever I think of Blessan, the one thing that reverberates in my ears is the song 'Lajjawathiye' and the way Blessa would dance to this song with Consummate ease. This is because our first meeting was at our YDP New Year party and besides his dancing skills, what resonated was his affable disposition. Our common interests in Cricket & liquid courage do form a bond. And I hear that he is great at work too, so that completes the circle. With you by his side now Reshmi, am sure Blessa will feel more FORTYfied on this 13th October. Cheers and All the Best.  Not only a great DOST, but a fantastic HOST too.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Jaison" class="modal">
+            <p class="title">Jaison</p>
+            <p>Happy 40th birthday – Blessa.  Aaj ke baad 40ml ke neche peg nahi peena. So think less and drink more.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Earle" class="modal">
+            <p class="title">Earle</p>
+            <p>Hi. I cannot forget Blessan coming with us to pick up Skye (our now not so little pup). We were in a conundrum as to which pup to pick up. And Blessan went out of his way to find out and then bring home a little darling for our little darling. Thanks Blessan! ☺️</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Shyam" class="modal">
+            <p class="title">Shyam</p>
+            <p>Once during my kg time 'shaktiman' came to take me back in the afternoon and  it was sleeping time for us and the authorities  wouldn't let you in. There was some confusion regarding my name as you first said Shyam.Only after interrogating you for some time did they come and wake me up and then I had to come to the gate and identify you and confirm that I was ok to come with you. And then only did they let me go with you.  And I think we had a 'naranga soda' after it as I wanted it so much, and you were like ' ini oru naranga soda aakam'.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Girish" class="modal">
+            <p class="title">Girish</p>
+            <p>“What came first, the chicken or the egg?”
+Blessan: I don’t care, I eat both!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Babu" class="modal">
+            <p class="title">Babu</p>
+            <p>Traits of a mallu with a difference. terrific sense of rhythm, speaks hindi, extra ordinarily handsome, natural at sports even in cricket (mallu see)..alcohol has no effect on this dude… a man whose effect on you is not immediate but grows on your psyche.. and the cool dude has an inimitable smile… that kind of nails his persona.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Asnani" class="modal">
+            <p class="title">Asnani</p>
+            <p>Happy naughty 40th, Blessa! As you turn forty, I hope you remember all the fun times from Spirit Bar, our IT outings and our favourite rickshawala song for the next forty years.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Amma" class="modal">
+            <p class="title">Amma</p>
+            <p>If someone asks me which is the most happiest moment in my 73 years of life l would instantly say its on 1982 October 13 , a Wednesday 11:31am when you were born. When you were 3 years old, you ran away from home and we could not find you anywhere in the house or outside or at any of the neighbors’ house.  I was scared and was crying looking for you.  Finally we found you at a ground, little away from the house (very far for a 3 year old) watching CRICKET game.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Roopa" class="modal">
+            <p class="title">Roopa</p>
+            <p>Blessu ...as i call him... Sabse smarty baccha hai...kaam ho yaa party ...enjoys dil se!!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Joby" class="modal">
+            <p class="title">Joby</p>
+            <p>Happy 40th Birthday! I would like to take you down memory lane. There was a time when we used to celebrate our birthdays together as mine is on 11th and yours on 13th hence we used to celebrate our birthdays on October 12th by cutting a masala dosa together and sharing karinjali water at Anadavadi Restaurant. In memory of our young, larger than life days, I have ordered a masala dosa for you to cut which will be brought to you shortly.  Thank You for being part of all my good memories. Hope your 40th birthday is filled with joy, happiness, laughter, love, great memories and prayers. Once again, HAPPY BIRTHDAY ALIYAA!!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Aleena" class="modal">
+            <p class="title">Aleena</p>
+            <p>A very happppy Birthday Amachu. I know there are many fond memories together but this one's a memory which I wish I can cherish once again.  Do you remember the times when we used to watch Sathiya movie together in kalpataru.... I loved those days when you lived with us.
+At every birthday you surprised me with wonderful gifts which I'll never forget.
+And one thing you should not forget.... The day I was born... You passed your pre degree with distinction . So yes I'm indeed a lucky charm for you amachu. May our bond goes this way till the end.
+Once again happy happy birthday amachuu!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Brigeetha" class="modal">
+            <p class="title">Brigeetha</p>
+            <p>Hey Blessa...Congratulations on your 40th birthday. Wishing you a truly fabulous day and  remember you're not 40, you're 18 with 22 years' experience....n
+Here's to many more...🍻</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Supriya" class="modal">
+            <p class="title">Supriya</p>
+            <p>Baabu is just like me  as the name implies, he is cool, fun loving, adorable and a reliable buddy. The ginger lemon he makes is my absolute favorite. It is indescrible in words. I have no doubt that those who have had enough will agree.
+Baabu CAN dance saalaa; ur moves and DJ charisma have always been the difference- makers.
+Keep a smile on your face and order toast; we'll be pleased to assist. Happy Birthday to you, buddy </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Nancy" class="modal">
+            <p class="title">Nancy</p>
+            <p>Cuppa cha!! Who wouldn't like a cup of nice tea - especially when the maker is a highly recommended one?! A comedy of errors when Earle ended up adding   salted sugar (God alone knows, how!) to the freshly brewed tea while Bless continued a few sips into the tea thinking something is wrong with his taste buds until Resh came to his rescue...lol</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Nalini" class="modal">
+            <p class="title">Nalini</p>
+            <p>When I met Blessan for the first time, he came across as a pleasant and quiet person. With more interactions, I realized he has a great sense of humour and underneath the quiet surface hides a naughty self. His concern for his friends and ready to help attitude touched me!
+Here’s wishing a lovely person a very happy birthday! May all his dreams come true and May the Almighty shower His choicest blessings on him.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Bhaskar" class="modal">
+            <p class="title">Bhaskar</p>
+            <p>Blessan for me is a person who is  kind, caring, and make you feel comfortable even if you meet him for the first time. Must say he prepares awesome pork bindaloo, m  fan of his cooking also the  nimboo paani he prepares it’s like out of the world. Apart from this he is a good buddy drinker with whom I can go on drinking  ….🤩 Wish him a very happy birthday !! God Bless !!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="SmithaChehi" class="modal">
+            <p class="title">Smitha Chehi</p>
+            <p>To my one and only little brother. Eventhough you are my brother you were more like a Son to me ( thallu koodiyalum).....you are our Mon and I used to handfeed you till you were 10. And what you are today ( ninte thandum thadiyum) is because of my efforts then so, thank me later😁 During our childhood we fought often and it still continues in our endless verbal conflicts these days..Still you are my little brother. May all your dreams come true.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Kiran" class="modal">
+            <p class="title">Kiran</p>
+            <p>Dear Blesssan aliyan.. Happy to see you getting older with all of us and thought to give a small speech today to take my part in the celebration.Here is my hate speech to you..I first noticed you when I heard you correcting someone in the college that you are not BlessOn but BlessAn. In that very moment I could sense a spelling mistake in everything about you.  First of all I want to let you know in this occasion that I hate you for many reasons;
+I liked you for being the most mischievous boy in the class but hate you the most for scoring high marks always even after all these back stage activities. I liked you for being a so bullying child in the group but hate you for being a caring friend who stand with us always when needed.I liked you so much for flying down to Kochi in initial days just to booze with friends and to spend a month salary there for everyone's happiness, but I hate you the most when you ask us "Mumbai chennit autoriksha pidikaan 100 roopa tharuvo" when I drop you back in the airport.
+With 22 years of our friendship I can write a whole book of your stories with a title "BlessAn, a Lesson"
+Happy birthday my dear!! With full of sweet hatred and sweeter love</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Nebu" class="modal">
+            <p class="title">Nebu</p>
+            <p>Blessan Muthalali..This is  Nebu.. I am finding difficulty to make a note on a fun incident/memory which we had together since we had many. Am not sure if you remember,  we 6 or 7 became close friends at the very beginning itself after joining BSc then others joined and then our friends circle expanded. When I try to recollect some fun moments we had together,  then it can be the stories around that you planned to learn driving in our Ford Icon car and your comment on your very strong "Vimal" pant after we fall down from Naveen's bike 
+At this point of time, I wish you a Very Happy Birthday!!
+Enjoy your day!!!! </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="ArunDubai" class="modal">
+            <p class="title">Arun Dubai</p>
+            <p>Blessan. This Mallu chap is my only company in New Years when it comes to Dappan Kutthu songs. One thing is certain, the Dappan Kutthu can stop but he will never get tired. He is a fun person who likes his whisky and beaf . The twinkle in his eye when he speaks about the amazing Kerala curries cannot be missed. Bottles of whisky gulped down and early morning cricket time he is ready for everything. Happy Birthday changathi and enjoy your special day in Thubai.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="BlessyChechi" class="modal">
+            <p class="title">Blessy Chechi</p>
+            <p>This day before 40 years is very mem orable day for me, when I came to Madama Hospital, Adoor to see you in the heavy rain. I think you still remember the taste of the kanji and asthram you had for breakfast from Ellathu house with the children there and the speed at which you ran to have breakfast. You were very fond of ‘Poovan Pazham’ and used to select the same from the different type of bananas from the basket of the ammachi – you would not compromise with any other type of banana (poovan pazham is the most tastiest & costliest banana).  Wishing you all the very best and a peaceful life in future.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Surya" class="modal">
+            <p class="title">Surya</p>
+            <p>‘I guess I first met Blessan in his LCL office and then at spaced-out times in the next years. A young, gentle, pleasant and man, who communicated more with his nods than his evolving Hindi. All I knew was he was good and sharp at work.
+To then be a friend and now a proud colleague is among the nicer grants of destiny.
+Most delighted his talent and ability married Reshmi’s drive and confidence to now feel truly consummate.
+Here’s wishing the very best for him at home and work.
+A happy adolescent 40th birthday.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Shalin" class="modal">
+            <p class="title">Shalin</p>
+            <p>Hii Ammachu,
+I wish to share a memory from Richi achachan's marriage. At the reception ammachi was very hungry and being diabetic she had to have some food. Seeing the big queue in the main course section, ammachi who is so fond of sweets, rushed to the dessert counter to snatch some. Halfway Ammachu caught Ammachi took some salads with broccoli and gave it to her and insisted to have it. Though Ammachu did it with great concern remembering ammachi's face while having that broccoli still makes me laugh...</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Rach" class="modal">
+            <p class="title">Rach</p>
+            <p>So my most memorable moment (to date) with Blessan was when we all went to Pawna lake. We were all chilling in the lake and Blessan took this kids floating duck/swan and sat on it like a little boy and had a blast. I still remember that moment so well and the look of joy on Blessan’s face was that of a five year old. I wish you a very happy birthday, Blessan - may you enjoy not just your day but your new decade 🥰😍</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Kunal" class="modal">
+            <p class="title">Kunal</p>
+            <p>Happy 40th Bolson!!
+We have many moments that i can't forget... The arguments, the disagreements, the train incident that you fell asleep & everything was stolen of yours even your ciggerate  but the most memorable one will always be the one in the car on our way to office & not a word we spoke, just turned our head to the road (you know why) . When we talk about it we still laugh loud We have had the best of time & it shall remain the same . Cheers🍻</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Hansa" class="modal">
+            <p class="title">Hansa</p>
+            <p>Life’s milestones should not be counted, they should be celebrated!! You are very special to us & you know that for sure!! We have had a lot of good, bad & funny moments , but today we just want to wish you a very  Happy 40th Blessan!❤️
+"Welcome to your Four Ts – Terrific, Talented, Thoughtful, and Top-notch!”
+Lots of love </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Guddi" class="modal">
+            <p class="title">Guddi</p>
+            <p>Happy bday, Blessan!
+Wishing you all the happiness in the world (even though you have Reshmi now).
+Wishing you beautiful things n a fun life (even though you have Reshmi now)
+And last but not least, wishing you peace and harmony (especially now that you have Reshmi)! :)
+With lots of love,</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Aliyan" class="modal">
+            <p class="title">Aliyan</p>
+            <p>Apart from the White House, all other strategic decision was made in my Kitchen Balcony with you and Bren. I invite you for yet another session in the balcony, for, we have to save the world. Welcome anytime with sufficient Fuel </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Sibi" class="modal">
+            <p class="title">Sibi</p>
+            <p>Facts about Blessan:
+Not sure if you guys have noticed but whenever he waves his hand at some one his middle finger will be slight in the front than the other fingers
+When he concentrates, he sticks out his tongue just like a snake. Well, his nick name was snake  in his hometown
+Most of the time I have felt he is living in the moment than worried about the past
+He reminds me of Russell Peters
+Was crazy about Enfield bikes.
+
+Once I was admitted in hospital, He was there to stay with me for the night. He was sleeping on the patient’s bed while I was on the visitor’s bed due to him having an injury on his knee (Another long story ). Early morning Nurse was in our room with an injection for me. I could hear Blessan screaming at the Nurse that he is not the patient.
+My Belief in Karma
+Once while walking back from college (to keep in mind it takes 30 minutes minimum from our college to the nearest bus stop). One of our friends asked him if he needs a lift. He just left me and went along with them. Half away travelling on the bus I saw blessan and 2 friends of mine pushing a bike over a hill. Can’t Complaint.
+His Friends dad bought him an ice cream when he completed 12th
+While he was studying for 12th, he was crazy about cricket. He wanted to go to SB College for higher education. Knowing his plan his dad declined it. Blessan decided not to write his final exam paper. Hearing this his 4 friends were hurt. Thinking about them all passing the exam while he alone left there was not something they were ready to accept. Friends decided to encourage him but finally by force they made him sit for the exam. When the result came all 4 of them failed but he passed. That’s when one of his friends Dad bought him an ice cream. If you didn’t write that exam, I am not sure we would have ever met, and I might have not got a good friend like you. Happy birthday to you Chief.
+
+GYM BOYS
+Decided to go to the gym in the evening. Went on our first day. No Instructors. I started to do basic stuffs since I was unsure how to use the machines. I am not sure what inspired him, definitely not me, Blessan got it to a beast mode .Started to hit all machines randomly .In between I could see him picking dumbbells ,later push ups then after some time Pull ups. Seeing his confidence, I decided not to compete with him. Once my work out was over I was not able to find Blessan anywhere. Finally, I saw him outside the gym sitting right near to a pipe murmuring his Head was spinning.
+
+
+Mischievous
+Very frequently he used to go to the theaters and watch movies. Once he watched an utter flop movie. Persuaded few other friends to watch the movie. The mischievous part was later, in front of all other he used to ask the review of the movie and every single one used to give good reviews thus more and more people fell for the trap.
+
+Mischievous part 2
+Recently met a common friend,His name is Blessan too. While we were discussing about our good old days. He did mention to me that he was so scared someone from his family will come and visit him in the colleague. So, he used to remind his parents if they were planning to visit, please to mention his full name not just his First Name.
+
+Habits
+Moving police speed barricades from one side of the road to other.
+While at the movies, when everyone stops cheering, clapping and making noises, he used to howl like a wolf nah more like a dog I say.
+The first ever dancer who brilliantly imitated Hrithik Roshan (Kaho Naa Pyaar Hai) dance moves while sitting on a chair.</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Sneha&Anta" class="modal">
+            <p class="title">Sneha & Anta</p>
+            <p>We have many memories with Blessan and since most of them were in a drunk state - I’m not sure we remember them correctly
+But by far the best memory was after spending so many nights at the Aarey house we finally bought an apartment, and he was there when we got the keys… ironically that’s the only milestone he was there for and it’s the most special because he was there
+With all the Matargashti dances we’ve done over the years he’s the most charming and supportive human in our lives and we love him to the moon and back forever</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Chandu" class="modal">
+            <p class="title">Chandu</p>
+            <p>For me one memory, which is more recent, is his sheer happiness on your marriage day. That was nice to see him relaxed and happy, interacting with his college friends - couple of whom are now associated with Konsultera. And of course his love for dance, drink and non-veg food </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Bren" class="modal">
+            <p class="title">Bren</p>
+            <p>I have very few close friends in my life, when I say 'few' I really mean it. 
+
+My friendship with Blessan aka VediVeeran started in 2003. If I am not wrong, I am his first Best Friend in Mumbai. I always had a soft corner for those who come from Kerala or any part of the country who do not speak the local language as I faced the same challenge once upon a time.
+
+Since 2003, there has been no looking back for us. there is nothing that we did not do in life together. We bunked college lectures together, watched all shitty movies together, and drank together. (That's all i would like to say😁, Rest you can imagine.. haan bhai.. don't even think about it)
+
+We believed in each other so much that I offered him the job which I was supposed to get and he let me marry his sister, this is proof that he believed in me more than I believed in myself 
+
+He was the first to get a job amongst my best friends and he made sure he took the responsibility of looking after his friends very seriously and did it religiously.
+
+It's been 19 Years for our friendship, naaa... for our brotherhood. He is one of the few people whom I can look forward to during my ups and downs as our secret essence remains the same 'Drink Together' either khushi se ya gham se...
+
+Wish you a Happy 40th!!! Have a Blast!! I am waiting for the party!!!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+<div id="Roshan" class="modal">
+            <p class="title">Roshan</p>
+            <p>Quirkier…. I am not sure, but times were definitely not SANE.  I have known Blessa since 2008 (P3 days) and I must say, those were some of the best days together. Only things we thought and did (mostly) was EAT & DRINK (Not to confuse with anything else – its ALCOHOL). 
+
+Frankly, we only thought about these - Wake up, get ready and go to the mallu hotel for a heavy ‘naadan’ breakfast, and that is when we plan our evenings – Maharaja or IC Colony or Sprit. Sometimes such plans were so erratic that it kicked right after breakfast too. I wonder how we did it even?????????  Pakka Mallus in both Spirit and Spirit (alcohol).
+We stayed together in IC Colony, and it was a JOKE…. First thing that reminds me from IC is; we enrolled ourselves to a gym, and from day 1, we visited the premise religiously every single day, no matter Saturday or Sunday or Monday, just that…., we visited the BAR next door. The instructor once even told us ‘I’ve been noticing that you guys visit the complex daily and at times you can make way your to the gym too. It was such an awkward moment, but you know we were shameless as much. We continued going to the BAR. 
+Too many such stories, on rides, at bar, parties……………………………………….. and the list goes on, probably it can run into some comic series. I cherish the time and I wish my buddy a very HAPPY 40 and wishing loads of happiness and blessed years to come Mone. God bless!!!</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+
+        <div id="PraveenVenu" class="modal">
+            <p class="title">Praveen Venu</p>
+            <p>
+                Blessan, Remember you were my lab mate and final project partner for graduation. But I see you only on the day of project presentation to University team and I still remember when the university guy looked at you to explain, you telling him, as this guy said. 
+                <br/>So I say <b>you did not pass the degree</b> or you tell what was our final project 
+                <br/>Jokes apart (though it is not), I always admire two things in you, your determination and the value you give to each and every friendship that everyone think they are your best friend.
+                <br/><br/>Happy 40's !!! you are now 40 years young, and will be younger for many more & more years. May God Bless you.
+            </p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>
+
+
+
+        
+       
+        <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+    <li><a href="#Anna" rel="modal:open" data-weight="7">Anna</a></li>
+<li><a href="#Sonia" rel="modal:open" data-weight="1">Sonia</a></li>
+<li><a href="#Pallo" rel="modal:open" data-weight="7">Pallo</a></li>
+<li><a href="#ManojVarghese" rel="modal:open" data-weight="5">Manoj Varghese</a></li>
+<li><a href="#Rats" rel="modal:open" data-weight="7">Rats</a></li>
+<li><a href="#Mo" rel="modal:open" data-weight="2">Mo</a></li>
+<li><a href="#Rosy" rel="modal:open" data-weight="2">Rosy</a></li>
+<li><a href="#Krychelle" rel="modal:open" data-weight="7">Krychelle</a></li>
+<li><a href="#Rinki" rel="modal:open" data-weight="4">Rinki</a></li>
+<li><a href="#Snehal" rel="modal:open" data-weight="6">Snehal</a></li>
+<li><a href="#Pappu" rel="modal:open" data-weight="6">Pappu</a></li>
+<li><a href="#Shal" rel="modal:open" data-weight="6">Shal</a></li>
+<li><a href="#Antony" rel="modal:open" data-weight="3">Antony</a></li>
+<li><a href="#Sari" rel="modal:open" data-weight="2">Sari</a></li>
+<li><a href="#Bala" rel="modal:open" data-weight="3">Bala</a></li>
+<li><a href="#Jaison" rel="modal:open" data-weight="4">Jaison</a></li>
+<li><a href="#Earle" rel="modal:open" data-weight="7">Earle</a></li>
+<li><a href="#Shyam" rel="modal:open" data-weight="6">Shyam</a></li>
+<li><a href="#Girish" rel="modal:open" data-weight="3">Girish</a></li>
+<li><a href="#Babu" rel="modal:open" data-weight="4">Babu</a></li>
+<li><a href="#Asnani" rel="modal:open" data-weight="3">Asnani</a></li>
+<li><a href="#PraveenVenu" rel="modal:open" data-weight="6">Praveen Venu</a></li>
+<li><a href="#Amma" rel="modal:open" data-weight="8">Amma</a></li>
+<li><a href="#Roopa" rel="modal:open" data-weight="2">Roopa</a></li>
+<li><a href="#Joby" rel="modal:open" data-weight="2">Joby</a></li>
+<li><a href="#Aleena" rel="modal:open" data-weight="3">Aleena</a></li>
+<li><a href="#Brigeetha" rel="modal:open" data-weight="7">Brigeetha</a></li>
+<li><a href="#Supriya" rel="modal:open" data-weight="7">Supriya</a></li>
+<li><a href="#Nancy" rel="modal:open" data-weight="7">Nancy</a></li>
+<li><a href="#Nalini" rel="modal:open" data-weight="2">Nalini</a></li>
+<li><a href="#Bhaskar" rel="modal:open" data-weight="7">Bhaskar</a></li>
+<li><a href="#SmithaChehi" rel="modal:open" data-weight="2">Smitha Chehi</a></li>
+<li><a href="#Kiran" rel="modal:open" data-weight="2">Kiran</a></li>
+<li><a href="#Nebu" rel="modal:open" data-weight="3">Nebu</a></li>
+<li><a href="#ArunDubai" rel="modal:open" data-weight="4">Arun Dubai</a></li>
+<li><a href="#BlessyChechi" rel="modal:open" data-weight="7">Blessy Chechi</a></li>
+<li><a href="#Surya" rel="modal:open" data-weight="7">Surya</a></li>
+<li><a href="#Shalin" rel="modal:open" data-weight="3">Shalin</a></li>
+<li><a href="#Rach" rel="modal:open" data-weight="3">Rach</a></li>
+<li><a href="#Kunal" rel="modal:open" data-weight="6">Kunal</a></li>
+<li><a href="#Hansa" rel="modal:open" data-weight="6">Hansa</a></li>
+<li><a href="#Guddi" rel="modal:open" data-weight="5">Guddi</a></li>
+<li><a href="#Aliyan" rel="modal:open" data-weight="7">Aliyan</a></li>
+<li><a href="#Sibi" rel="modal:open" data-weight="4">Sibi</a></li>
+<li><a href="#Sneha&Anta" rel="modal:open" data-weight="7">Sneha & Anta</a></li>
+<li><a href="#Chandu" rel="modal:open" data-weight="7">Chandu</a></li>
+<li><a href="#Bren" rel="modal:open" data-weight="4">Bren</a></li>
+
+</ul>
+
+
+    </body>
+</html>
